@@ -6,8 +6,8 @@ import {
   CURRENCY,
   MERCHANT,
   SCRIPT_URL,
-} from "../config/env";
-import { generateOrderId } from "../utils/generateOrderId";
+} from "../config/env.js";
+import { generateOrderId } from "../utils/generateOrderId.js";
 
 // const MERCHANT = "102597";
 export const createCheckoutSession = async (
