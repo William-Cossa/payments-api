@@ -9,7 +9,6 @@ import {
 } from "../config/env.js";
 import { generateOrderId } from "../utils/generateOrderId.js";
 
-// const MERCHANT = "102597";
 export const createCheckoutSession = async (
   req: Request,
   res: Response,
