@@ -82,13 +82,44 @@ export const startCheckout = (
 
   res.send(`
    <!DOCTYPE html>
-  <html>
-    <head>
-      <title>Processando pagamento</title>
-    </head>
-    <body>
-      <h2>A iniciar o pagamento...</h2>
+   <head>
+    <title>Processando pagamento</title>
+    <style>
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f9f9f9;
+      font-family: sans-serif;
+    "
+  >
+    <h2 style="margin-bottom: 20px;">A iniciar o pagamento...</h2>
 
+    <div
+      style="
+        width: 40px;
+        height: 40px;
+        border: 4px solid #ccc;
+        border-top: 4px solid #4f46e5;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      "
+    ></div>
       <script>
         function loadScript(src, callback) {
           const script = document.createElement('script');
@@ -115,11 +146,11 @@ export const startCheckout = (
               merchant: {
                 name: "Unitec Academy",
                 address: {
-                  line1: "Av. Karl Marx, 1128",
+                  line1: "Av. Karl Marx, 1128", 
                   line2: "Maputo"
                 },
                 email: "geral@paytech.tech",
-                phone: "+258 123456789"
+                phone: "+258 123456789" 
               }
             }
           });
