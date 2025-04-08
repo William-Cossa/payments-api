@@ -108,7 +108,7 @@ export const startCheckout = (
       font-family: sans-serif;
     "
   >
-    <h2 style="margin-bottom: 20px;">A iniciar o pagamento...</h2>
+    <h2 style="margin-bottom: 20px;">A processar o pagamento...</h2>
 
     <div
       style="
