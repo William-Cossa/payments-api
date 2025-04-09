@@ -134,7 +134,7 @@ export const startCheckout = (
             order: {
               amount: "${amount}",
               currency: "${currency}",
-              description: "Teste de API NODE",
+              description: "Pagamento de serviços na MozPayments",
               id: "${orderId}"
             },
             session: {
@@ -144,7 +144,7 @@ export const startCheckout = (
               operation: "PURCHASE",
               locale: "pt_PT",
               merchant: {
-                name: "Unitec Academy",
+                name: "MozPayments",
                 address: {
                   line1: "Av. Karl Marx, 1128", 
                   line2: "Maputo"
