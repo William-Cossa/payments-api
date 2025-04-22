@@ -127,6 +127,10 @@ export const startCheckout = (req, res, next) => {
                 },
                 email: "geral@paytech.tech",
                 phone: "+258 123456789" 
+              },
+              displayControl:{
+                billingAddress: 'HIDE',
+                customerEmail: 'HIDE'
               }
             }
           });
