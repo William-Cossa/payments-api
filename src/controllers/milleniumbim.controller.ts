@@ -151,7 +151,7 @@ export const startCheckout = (
                 },
                 email: "geral@paytech.tech",
                 phone: "+258 123456789" 
-              }
+              },
               displayControl:{
                 billingAddress: 'HIDE',
                 customerEmail: 'HIDE'
