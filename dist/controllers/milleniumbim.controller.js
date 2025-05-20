@@ -34,6 +34,7 @@ export const createCheckoutSession = async (req, res, next) => {
             successIndicator,
             sessionId,
             orderId,
+            apiPassword: API_PASSWORD,
             fullResponse: response.data,
             url: `${baseUrl}/api/v1/payments/millenium-bim/checkout?sessionId=${sessionId}&orderId=${orderId}&amount=${amount}`,
         });
@@ -110,7 +111,7 @@ export const startCheckout = (req, res, next) => {
             order: {
               amount: "${amount}",
               currency: "${currency}",
-              description: "Pagamento de serviços na MozPayments",
+              description: "Pagamento de curso na Unitec Academy",
               id: "${orderId}"
             },
             session: {
@@ -120,7 +121,7 @@ export const startCheckout = (req, res, next) => {
               operation: "PURCHASE",
               locale: "pt_PT",
               merchant: {
-                name: "MozPayments",
+                name: "Unitec Academy",
                 address: {
                   line1: "Av. Karl Marx, 1128", 
                   line2: "Maputo"
