@@ -8,7 +8,7 @@ export const {
   API_URL,
   SCRIPT_URL,
   API_PASSWORD,
-  MERCHANT,
+  MERCHANT = 102593,
   CURRENCY,
 }: any = process.env;
 
