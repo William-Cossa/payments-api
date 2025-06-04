@@ -52,7 +52,6 @@ export const createCheckoutSession = async (
       successIndicator,
       sessionId,
       orderId,
-      apiPassword: API_PASSWORD,
       fullResponse: response.data,
       url: `${baseUrl}/api/v1/payments/millenium-bim/checkout?sessionId=${sessionId}&orderId=${orderId}&amount=${amount}`,
     });
